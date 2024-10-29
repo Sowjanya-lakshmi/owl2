@@ -1,0 +1,27 @@
+/* *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  
+} */
+.item{
+    border: 1px solid lightgrey;
+    border-radius: 20px;
+    box-shadow: 2px 2px  lightgrey;
+    
+}
+.item img{
+    
+    width: 50px;
+    height: 200px;
+    
+}
+.item h1{
+   text-align: center;
+   color: rgb(135, 142, 6);
+   font-size: 24px;
+   font-weight: bold;
+   font-family: 'Times New Roman', Times, serif;
+}
+h1{
+  text-align: center;
+}

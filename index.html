@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Owl</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="plugin/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="plugin/assets/owl.theme.default.min.css">
+</head>
+<body>
+    <div>
+        <h1>Top <span id="movies">50</span>+ Most Delicious Indian Foods</h1>
+    </div>
+    <div class="owl-carousel owl-theme">
+    <div class="item">
+            <img src="assets/Biryani.png" alt="" />
+            <h1>Biryani</h1>
+        </div>
+        <div class="item">
+            <img src="assets/Fish Fry.png" alt="" />
+            <h1>Fish Fry</h1>
+        </div>
+        <div class="item">
+            <img src="assets/Fried Rice.png" alt="" />
+            <h1>Fried Rice</h1>
+        </div>
+        <div class="item">
+            <img src="assets/kebabs.png" alt="" />
+            <h1>kebabs</h1>
+        </div>
+        <div class="item">
+            <img src="assets/Mutton.png" alt="" />
+            <h1>Mutton</h1>
+        </div>
+        <div class="item">
+            <img src="assets/MilkShake.png" alt="" />
+            <h1>MilkShake</h1>
+        </div>
+        <div class="item">
+            <img src="assets/North Indian.png" alt="" />
+            <h1>North Indian</h1>
+        </div>
+        <div class="item">
+            <img src="assets/South Indian.png" alt="" />
+            <h1>South Indian</h1>
+        </div>
+        <div class="item">
+            <img src="assets/Paneer.png" alt="" />
+            <h1>Paneer</h1>
+        </div>
+        <div class="item">
+            <img src="assets/Prawns.png" alt="" />
+            <h1>Prawns</h1>
+        </div>
+        <div class="item">
+            <img src="assets/Salad.png" alt="" />
+            <h1>Salad</h1>
+        </div>
+        <div class="item">
+            <img src="assets/Soup.png" alt="" />
+            <h1>Soup</h1>
+        </div>
+        <div class="item">
+            <img src="assets/Wings.png" alt="" />
+            <h1>Wings</h1>
+        </div>
+    
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="countMe/countMe.min.js"></script>
+    <script src="plugin/owl.carousel.min.js"></script>
+    <script>
+        $("#movies").countMe(80,80)
+        $('.owl-carousel').owlCarousel({
+            loop:true,
+            margin:16,
+            nav:true,
+            autoplay:true,
+            autoplayTimeout:1000,
+            autoplayHoverPause:true,
+            responsive:{
+            0:{
+               items:1
+            },
+            600:{
+            items:3
+          },
+            1000:{
+            items:5
+          }
+        }
+        
+      })
+    </script>
+</body>
+</html>
